@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_with_overlay"
+    tools:context=".LoginActivity">
+
+    <!--title-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:text="ReelLife"
+        android:fontFamily="@font/karla"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="80sp"/>
+    <!--title-->
+
+    <!--icon-->
+    <ImageView
+        android:layout_width="95dp"
+        android:layout_height="90dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/film_reel_long">
+    </ImageView>
+    <!--icon-->
+
+
+    <!--login box-->
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="280dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:background="@color/colorAccent">
+
+        <!--username/password-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:padding="40dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/karla"
+                android:text="USERNAME"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/email"
+                android:inputType="textWebEmailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/karla"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/karla"
+                android:text="PASSWORD"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/password"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/karla"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="15sp"/>
+
+        </LinearLayout><!--username/password-->
+
+        <!--get started-->
+        <Button
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:background="@color/colorPrimary"
+            android:text="Get Started"
+            android:fontFamily="@font/karla"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:clickable="true"
+            android:focusable="false"
+            android:drawableEnd="@drawable/icon_arrow"/><!--get started-->
+
+    </LinearLayout><!--login box-->
+
+    <!--create account-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/karla"
+            android:text="Not Registered?"
+            android:textColor="@color/colorAccent"
+            android:textSize="15sp"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/register"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/karla"
+            android:text="Create Account"
+            android:textColor="@color/colorAccent"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textAlignment="center"
+            android:clickable="true"
+            android:focusable="false" />
+
+    </LinearLayout><!--create account-->
+
+
+
+</LinearLayout>

@@ -1,4 +1,4 @@
-package com.example.lexiwylie.reellife;
+package com.example.lexiwylie.rl;
 
 import org.junit.Test;
 

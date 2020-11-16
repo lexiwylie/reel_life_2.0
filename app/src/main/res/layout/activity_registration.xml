@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_with_overlay"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".RegistrationActivity">
+
+    <!--title-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/karla"
+        android:text="Create Account"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+    <!--title-->
+
+    <!--registration box-->
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="450dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorAccent"
+        android:orientation="vertical">
+
+        <!--input-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="380dp"
+            android:orientation="vertical"
+            android:padding="35dp">
+
+            <!-- username -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/karla"
+                android:text="USERNAME"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/karla"
+                android:inputType="text"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="10sp" />
+            <!-- username -->
+
+            <!-- first name -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/karla"
+                android:text="FIRST NAME"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/firstName"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/karla"
+                android:inputType="text"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="15sp" />
+            <!-- first name -->
+
+            <!-- last name -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/karla"
+                android:text="LAST NAME"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/lastName"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/karla"
+                android:inputType="text"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="15sp" />
+            <!-- last name -->
+
+            <!-- email -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/karla"
+                android:text="EMAIL"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/emailRegister"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/karla"
+                android:inputType="textWebEmailAddress"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="15sp" />
+            <!-- email -->
+
+            <!-- password -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/karla"
+                android:text="PASSWORD"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/passwordRegister"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/karla"
+                android:inputType="textPassword"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="15sp" />
+            <!-- password -->
+
+        </LinearLayout><!--input-->
+
+        <!--get started-->
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:drawableEnd="@drawable/icon_arrow"
+            android:fontFamily="@font/karla"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:text="Register"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="15sp"
+            android:textStyle="bold" /><!--get started-->
+
+    </LinearLayout><!--registration box-->
+
+</LinearLayout>
